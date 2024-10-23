@@ -7,7 +7,7 @@ function transposeChords(direction) {
     let lyrics = lyricsElement.innerText;
 
     // Updated regex to match chords properly while excluding normal words
-    const chordRegex = /(?<!\w)([A-G](?:b|#)?(?:maj|min|m|M|\+|-|dim|aug)?[0-9]*(?:sus[24]?)?(?:b|#)?[0-9]*(\/[A-G](?:b|#)?)?)(?!\w)/g;
+    const chordRegex = /(?<!\w)([A-G](?:b|#)?(?:maj|min|m|M|\+|-|dim|aug)?[0-9]*(?:-|\+)?(?:sus[24]?)?(?:b|#)?[0-9]*(\/[A-G](?:b|#)?)?)(?!\w)/g;
 
     // Replace chords in lyrics
     lyrics = lyrics.replace(chordRegex, (match) => {

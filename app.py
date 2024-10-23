@@ -46,7 +46,7 @@ def regex_match(s, pattern):
 @app.route('/')
 def index():
     songs = Song.query.all()
-    return render_template('index.html', songs=songs, this_song="")
+    return render_template('index.html', songs=songs)
 
 # Route to view song details and handle transposition
 @app.route('/song/<int:song_id>')
