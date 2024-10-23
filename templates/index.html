@@ -1,0 +1,24 @@
+{% include 'header.html' %}
+<div class="main main-content container header1">
+    <div class="content-area">
+        
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">Artist</th>
+                  <th scope="col">Song</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for song in songs %}
+                <tr>
+                  <td>{{ song.artist }}</td>
+                  <td><a href="{{ url_for('song_detail', song_id=song.id) }}">{{ song.title }}</a></td>
+                </tr>
+                {% endfor %}
+          </table>
+ 
+
+</div>
+</div>
+{% include 'footer.html' %}

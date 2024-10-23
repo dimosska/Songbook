@@ -1,0 +1,24 @@
+<!-- templates/edit_song.html -->
+{% include 'header.html' %}
+<div class="main main-content container">
+    <div class="container-sm">
+    <h1>Edit</h1>
+    <form method="POST" action="{{ url_for('edit_song', song_id=song.id) }}">
+        <label for="title" class="form-label">Title:</label>
+        <input type="text" id="title" name="title" value="{{ song.title }}" class="form-control" required><br>
+
+        <label for="artist" class="form-label">Artist:</label>
+        <input type="text" id="artist" name="artist" value="{{ song.artist }}" class="form-control" required><br>
+
+        <label for="lyrics_chords" class="form-label">Lyrics and Chords:</label><br>
+        <textarea class="form-control" id="lyrics_chords" name="lyrics_chords" rows="10" required>{{ song.lyrics_chords }}</textarea><br>
+
+
+        <button type="submit" class="btn btn-primary">Save changes</button>
+        <a href="{{ url_for('song_detail', song_id=song.id) }}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+</div>
+
+
+{% include 'footer.html' %}

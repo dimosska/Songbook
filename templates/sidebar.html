@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="sidenav row vh-100">
+        <!-- Sidebar -->
+        <div class="col-md-3 bg-light border-right d-flex flex-column">
+            <div class="sidebar-heading p-3">Songs:</div>
+            <ul class="list-group list-group-flush flex-grow-1">
+                {% for song in songs %}
+                <li class="list-group-item {% if song.id == this_song.id %}active{% endif %}">
+                    <a href="{{ url_for('song_detail', song_id=song.id) }}">{{ song.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
