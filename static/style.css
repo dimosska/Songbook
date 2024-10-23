@@ -1,23 +1,27 @@
-
-.main-content {
+  .main-content {
     max-width: 800px; /* Limit the maximum width */
     margin: 0 auto; /* Center the content */
     margin-top: 100px;
 
 }
-.lyrics-container {
+  .lyrics-container {
     word-wrap: break-word; /* Handle long lines in lyrics */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
     font-size: 16px;
 }
 
-/* The sidebar menu */
+  .main {
+    margin-top: 50px;
+    padding: 0px 0px;
+  }
 
-.highlight-chord {
+
+  .highlight-chord {
     color: #ff6347; /* Tomato color */
     font-weight: bold;
 }
 
-.modal-dialog {
+  .modal-dialog {
     color: #000000;
 }
+

@@ -106,5 +106,5 @@ def init_db():
 # Run the app
 if __name__ == '__main__':
     create_tables()  # Create tables before the first request
-    app.run(debug=True)
+    # app.run(debug=True)
 
