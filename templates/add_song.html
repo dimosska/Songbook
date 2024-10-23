@@ -1,0 +1,21 @@
+<!-- templates/add_song.html -->
+{% include 'header.html' %}
+<div class="main main-content container">
+    <div class="container-sm">
+    <h1>Add a New Song</h1>
+    <form method="POST" action="{{ url_for('add_song') }}">
+        <label for="title" class="form-label">Title:</label>
+        <input type="text" id="title" name="title" class="form-control" required><br>
+
+        <label for="artist" class="form-label">Artist:</label>
+        <input type="text" id="artist" name="artist" class="form-control" required><br>
+
+        <label for="lyrics_chords" class="form-label">Lyrics and Chords:</label><br>
+        <textarea class="form-control" id="lyrics_chords" name="lyrics_chords" rows="10" required></textarea><br>
+
+
+        <button type="submit" class="btn btn-primary">Add Song</button>
+    </form>
+</div>
+</div>
+{% include 'footer.html' %}
