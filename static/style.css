@@ -1,62 +1,27 @@
-
-.main-content {
+  .main-content {
     max-width: 800px; /* Limit the maximum width */
     margin: 0 auto; /* Center the content */
     margin-top: 100px;
 
 }
-.lyrics-container {
+  .lyrics-container {
     word-wrap: break-word; /* Handle long lines in lyrics */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
     font-size: 16px;
 }
 
-/* The sidebar menu */
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 260px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    /* top: 50px; Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 0px;
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 6px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #818181;
-    display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #000000;
-  }
-  
-  /* Style page content */
   .main {
-    margin-left: 260px; /* Same as the width of the sidebar */
     margin-top: 50px;
     padding: 0px 0px;
   }
-  
-  @media (min-width: 768px) {
-    .col-md-3 {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-}
 
-.highlight-chord {
+
+  .highlight-chord {
     color: #ff6347; /* Tomato color */
     font-weight: bold;
 }
 
-.modal-dialog {
+  .modal-dialog {
     color: #000000;
 }
+
